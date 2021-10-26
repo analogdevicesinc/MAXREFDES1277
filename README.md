@@ -41,6 +41,7 @@ discharging of the battery.
 | ALERTOUT_PIN_MICRO | NC |   |
 | ALERTIN_MICRO | NC |   |
 | AGND_MICRO | GND (in Arduino) | Black |
+
 *These connections are specific to Arduino Mega 2560 microcontroller. 
 
 For current measurements:
@@ -48,8 +49,9 @@ For current measurements:
 - Connect J34 (battery test jig) through wire to J5 (MAXREFDES1277). For the reverse direction of the current flow, connections can be interchanged. Refer to section 2.2.2 of the MAXREFDES1277 Reference Design Hardware User Manual (A.K.A. User Manual) for block diagrams and hardware images.
 - The UART cables are connected between J4(MAXREFDES1277) and J24
 (MAXREFDES1287). See the list of the different UART cable configurations below. (Refer to section 1.3.3 of the User Manual for more details).
+
 | Cable Designation | Description |
-| --------------------------- | ------------------ |
+| ------------------| ----------- |
 | Cable 3A | Single UART with external loop back |
 | Cable 3B | Dual UART |
 | Cable 3C | Reconfigurable Cable |

@@ -46,7 +46,7 @@ discharging of the battery.
 
 For current measurements:
 - Connect J33 (battery test jig) through wire to J6 (MAXREFDES1277).
-- Connect J34 (battery test jig) through wire to J5 (MAXREFDES1277). For the reverse direction of the current flow, connections can be interchanged. Refer to section 2.2.2 of the MAXREFDES1277 Reference Design Hardware User Manual (A.K.A. User Manual) for block diagrams and hardware images.
+- Connect J34 (battery test jig) through wire to J5 (MAXREFDES1277). For the reverse direction of the current flow, connections can be interchanged. Refer to section 2.2.2 of the [MAXREFDES1277 Reference Design Hardware User Manual](./MAXREFDES1277_Hardware_Manual.pdf) (A.K.A. User Manual) for block diagrams and hardware images.
 - The UART cables are connected between J4(MAXREFDES1277) and J24
 (MAXREFDES1287). See the list of the different UART cable configurations below. (Refer to section 1.3.3 of the User Manual for more details).
 
@@ -56,7 +56,7 @@ For current measurements:
 | Cable 3B | Dual UART |
 | Cable 3C | Reconfigurable Cable |
 | Cable 3D | EVKIT to MAXREFDES1277 Cable |
-| Cable 3E | Single UART with externa loop back for 2 meters |
+| Cable 3E | Single UART with external loop back for 2 meters |
 
 
 ### Software / Firmware Flow

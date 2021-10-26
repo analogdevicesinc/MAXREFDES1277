@@ -7,18 +7,18 @@ The MAXREFDES1277 consists of:
 - MAX17852 BMS IC
 - 2 x MAX17841 for Dual UART
 - MAXREFDES1277 battery test jig
-- General purpose micro controller (Arduino Mega) for configuring and communication
+- General purpose micro controller (Arduino Mega 2560) for configuring and communication
 - Various Communication cables (Cable #1, #2, #3A, #3B, #3C, #3D, #3E) and Arduino Mega to 
 REFDES SPI connections
 
-### MAXREFDES1277 Hardware Set Up
+### Hardware Set Up
 The hardware connections for MAXREFDES1277 (MAX17852) with MAXREFDES1287 (MAX17841-
 2), battery test jig and connection cables as shown in image below.
 
 ![image](setup.png)
 
 Set up of the MAXREFDES1277 involves placing battery cells into the battery test jig holders. Connecting cables cable 1 (J1 to J31), cable 2 (J2 to J32) for the voltage measurements and cable 3 (J4 to 
-J24) for UART communication. The Arduino mega microcontroller can be connected to the computer using USB AB (printer) cable for interfacing with the computer.
+J24) for UART communication. The Arduino Mega 2560 microcontroller board can be connected to the computer using USB AB (printer) cable for interfacing with the computer.
 
 Other steps and connections are as follows:
 1. Connect the pins 1-2 of all the jumpers from J12 to J28 in the battery test jig. This is for the 
@@ -41,4 +41,21 @@ discharging of the battery.
 | ALERTOUT_PIN_MICRO | NC |   |
 | ALERTIN_MICRO | NC |   |
 | AGND_MICRO | GND (in Arduino) | Black |
+*These connections are specific to Arduino Mega 2560 microcontroller. 
 
+For current measurements:
+- Connect J33 (battery test jig) through wire to J6 (MAXREFDES1277).
+- Connect J34 (battery test jig) through wire to J5 (MAXREFDES1277). For the reverse direction of the current flow, connections can be interchanged. Refer to section 2.2.2 of the MAXREFDES1277 Reference Design Hardware User Manual (A.K.A. User Manual) for block diagrams and hardware images.
+- The UART cables are connected between J4(MAXREFDES1277) and J24
+(MAXREFDES1287). See the list of the different UART cable configurations below. (Refer to section 1.3.3 of the User Manual for more details).
+| Cable Designation | Description |
+| --------------------------- | ------------------ |
+| Cable 3A | Single UART with external loop back |
+| Cable 3B | Dual UART |
+| Cable 3C | Reconfigurable Cable |
+| Cable 3D | EVKIT to MAXREFDES1277 Cable |
+| Cable 3E | Single UART with externa loop back for 2 meters |
+
+
+### Software / Firmware Flow
+![image](software_flow.png)

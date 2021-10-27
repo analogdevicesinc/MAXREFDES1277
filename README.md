@@ -30,9 +30,10 @@ SPI wire connection details from Arduino Mega 2560 to MAX17841EVKIT
 ### Software / Firmware Flow
 ![image](software_flow.png)
 
-**Software Download/Install:**
+**Software Download/Install**
 
 Click the "Code" button and click "Download ZIP" above (from the main GITHUB repo page). After the download finishes, unzip the archive to the directory of choice. All the files needed can be found in the firmware directory.  From the Arduino IDE, open the MAXREFDES1277.ino file. 
 
 **Firmware Serial Output**
+
 ![image](serial_terminal.png)

@@ -1,3 +1,5 @@
+Review links, etc.
+
 # MAXREFDES1277
 The MAXREFDES1277 reference design enables quick evaluation of MAX17853/52 for battery management in a 48V system. It can be used to test IC capabilities such as measurements, cell balancing and alerts using UART and SPI communications.
 
